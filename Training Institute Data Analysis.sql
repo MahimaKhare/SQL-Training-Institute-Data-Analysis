@@ -1,0 +1,212 @@
+--- Database Creation
+Create Database Institute;
+
+
+--- Creating Table
+Use Institute;
+Create table Students (
+student_id int Primary Key,
+name Varchar(50) Not Null,
+age Int,
+gender Varchar(10),
+course Varchar(50),
+fees Int,
+city Varchar(50),
+enrollment_date Date
+);
+
+
+--- Inserting Data into Table
+Insert into Students Values
+(1,'Rahul Sharma',21,'Male','Full Stack Development',45000,'Jaipur','2025-01-10'),
+(2,'Neha Verma',22,'Female','Digital Marketing',30000,'Delhi','2025-02-05'),
+(3,'Amit Singh',20,'Male','Graphics Design',28000,'Kota','2025-01-18'),
+(4,'Pooja Meena',23,'Female','RKCL',15000,'Jaipur','2025-03-01'),
+(5,'Rohit Gupta',24,'Male','Full Stack Development',48000,'Udaipur','2025-02-20'),
+(6,'Anjali Joshi',21,'Female','Digital Marketing',32000,'Delhi','2025-01-25'),
+(7,'Vikas Kumar',22,'Male','Graphics Design',26000,'Ajmer','2025-03-05'),
+(8,'Kiran Patel',19,'Female','RKCL',14000,'Jaipur','2025-01-12'),
+(9,'Sandeep Yadav',23,'Male','Full Stack Development',47000,'Alwar','2025-02-10'),
+(10,'Nisha Khan',20,'Female','Digital Marketing',31000,'Delhi','2025-03-08'),
+(11,'Arjun Mehta',22,'Male','Graphics Design',27000,'Jaipur','2025-01-30'),
+(12,'Simran Kaur',21,'Female','RKCL',16000,'Amritsar','2025-02-12'),
+(13,'Deepak Sharma',24,'Male','Full Stack Development',50000,'Jaipur','2025-03-03'),
+(14,'Ritu Saxena',23,'Female','Digital Marketing',33000,'Noida','2025-01-22'),
+(15,'Manish Jain',20,'Male','Graphics Design',25000,'Bikaner','2025-02-02'),
+(16,'Kavita Joshi',22,'Female','RKCL',15500,'Jaipur','2025-03-07'),
+(17,'Nitin Verma',21,'Male','Full Stack Development',46000,'Delhi','2025-02-18'),
+(18,'Priya Singh',23,'Female','Digital Marketing',34000,'Lucknow','2025-01-15'),
+(19,'Mohit Choudhary',22,'Male','Graphics Design',29000,'Jaipur','2025-02-25'),
+(20,'Sneha Patel',19,'Female','RKCL',14500,'Ahmedabad','2025-03-04'),
+(21,'Rakesh Yadav',24,'Male','Full Stack Development',49000,'Jaipur','2025-01-28'),
+(22,'Isha Malhotra',22,'Female','Digital Marketing',35000,'Delhi','2025-02-08'),
+(23,'Sunil Kumar',23,'Male','Graphics Design',26500,'Rohtak','2025-03-06'),
+(24,'Meenal Arora',21,'Female','RKCL',15800,'Jaipur','2025-01-14'),
+(25,'Aditya Sharma',20,'Male','Full Stack Development',45500,'Jaipur','2025-02-11'),
+(26,'Pallavi Jain',22,'Female','Digital Marketing',32500,'Indore','2025-03-02'),
+(27,'Kunal Mehta',23,'Male','Graphics Design',27500,'Surat','2025-01-19'),
+(28,'Rashmi Gupta',21,'Female','RKCL',15000,'Jaipur','2025-02-21'),
+(29,'Harsh Vardhan',24,'Male','Full Stack Development',51000,'Delhi','2025-03-09'),
+(30,'Aarti Mishra',20,'Female','Digital Marketing',31500,'Prayagraj','2025-01-27'),
+(31,'Gaurav Jain',22,'Male','Graphics Design',28500,'Jaipur','2025-02-03'),
+(32,'Komal Joshi',19,'Female','RKCL',14200,'Udaipur','2025-01-11'),
+(33,'Shubham Patel',23,'Male','Full Stack Development',46500,'Ahmedabad','2025-03-01'),
+(34,'Neetu Verma',21,'Female','Digital Marketing',33500,'Delhi','2025-02-16'),
+(35,'Ravi Kumar',20,'Male','Graphics Design',25500,'Patna','2025-01-20'),
+(36,'Tina Sharma',22,'Female','RKCL',15200,'Jaipur','2025-02-07'),
+(37,'Akash Singh',24,'Male','Full Stack Development',49500,'Kanpur','2025-03-05'),
+(38,'Divya Patel',23,'Female','Digital Marketing',34500,'Vadodara','2025-01-29'),
+(39,'Lokesh Meena',21,'Male','Graphics Design',27000,'Tonk','2025-02-13'),
+(40,'Rina Khan',20,'Female','RKCL',14800,'Jaipur','2025-03-06'),
+(41,'Sourabh Mishra',22,'Male','Full Stack Development',47000,'Gwalior','2025-02-09'),
+(42,'Kajal Gupta',23,'Female','Digital Marketing',35500,'Delhi','2025-03-03'),
+(43,'Yogesh Saini',21,'Male','Graphics Design',26000,'Jaipur','2025-01-18'),
+(44,'Suman Devi',19,'Female','RKCL',14000,'Hisar','2025-02-22'),
+(45,'Aman Verma',24,'Male','Full Stack Development',50500,'Delhi','2025-03-07'),
+(46,'Preeti Chawla',22,'Female','Digital Marketing',33000,'Panipat','2025-01-24'),
+(47,'Rohit Yadav',21,'Male','Graphics Design',29500,'Rewari','2025-02-14'),
+(48,'Anu Gupta',20,'Female','RKCL',15000,'Jaipur','2025-03-02'),
+(49,'Vishal Thakur',23,'Male','Full Stack Development',48500,'Shimla','2025-01-31'),
+(50,'Kriti Saxena',22,'Female','Digital Marketing',32000,'Bareilly','2025-02-10'),
+(51,'Naveen Sharma',21,'Male','Graphics Design',27000,'Jaipur','2025-03-01'),
+(52,'Pinky Mehra',19,'Female','RKCL',14500,'Roorkee','2025-01-15'),
+(53,'Sachin Kumar',24,'Male','Full Stack Development',50000,'Meerut','2025-02-25'),
+(54,'Sonam Arora',23,'Female','Digital Marketing',34000,'Delhi','2025-03-04'),
+(55,'Ankit Patel',22,'Male','Graphics Design',28500,'Surat','2025-01-18'),
+(56,'Richa Jain',21,'Female','RKCL',15500,'Jaipur','2025-02-19'),
+(57,'Mohammad Ali',23,'Male','Full Stack Development',47000,'Bhopal','2025-03-06'),
+(58,'Ayesha Khan',20,'Female','Digital Marketing',31500,'Indore','2025-01-22'),
+(59,'Dinesh Kumar',24,'Male','Graphics Design',29500,'Aligarh','2025-02-07'),
+(60,'Shalini Verma',22,'Female','RKCL',15000,'Jaipur','2025-03-01'),
+(61,'Abhishek Mishra',21,'Male','Full Stack Development',46000,'Prayagraj','2025-01-12'),
+(62,'Kanchan Gupta',23,'Female','Digital Marketing',33500,'Delhi','2025-02-14'),
+(63,'Vijay Singh',22,'Male','Graphics Design',27000,'Jhansi','2025-03-05'),
+(64,'Seema Yadav',19,'Female','RKCL',14000,'Jaipur','2025-01-20'),
+(65,'Rajat Sharma',24,'Male','Full Stack Development',50500,'Noida','2025-02-28'),
+(66,'Neelam Patel',21,'Female','Digital Marketing',32500,'Vadodara','2025-03-03'),
+(67,'Akhil Jain',23,'Male','Graphics Design',28500,'Jaipur','2025-01-25'),
+(68,'Payal Gupta',20,'Female','RKCL',15000,'Kota','2025-02-11'),
+(69,'Sumit Verma',22,'Male','Full Stack Development',47000,'Delhi','2025-03-08'),
+(70,'Tanvi Mehta',21,'Female','Digital Marketing',33000,'Mumbai','2025-01-30'),
+(71,'Manoj Kumar',24,'Male','Graphics Design',29500,'Rohtak','2025-02-04'),
+(72,'Asha Rani',19,'Female','RKCL',14500,'Hisar','2025-03-02'),
+(73,'Nikhil Arora',23,'Male','Full Stack Development',49000,'Gurgaon','2025-01-18'),
+(74,'Riya Singh',22,'Female','Digital Marketing',34500,'Patna','2025-02-26'),
+(75,'Pankaj Sharma',21,'Male','Graphics Design',27500,'Jaipur','2025-03-01'),
+(76,'Sonal Jain',20,'Female','RKCL',15000,'Udaipur','2025-01-23'),
+(77,'Imran Khan',24,'Male','Full Stack Development',51000,'Bikaner','2025-02-10'),
+(78,'Kritika Malhotra',22,'Female','Digital Marketing',35500,'Delhi','2025-03-05'),
+(79,'Ajay Yadav',23,'Male','Graphics Design',29000,'Rewari','2025-01-28'),
+(80,'Monika Gupta',21,'Female','RKCL',15200,'Jaipur','2025-02-15'),
+(81,'Karan Patel',22,'Male','Full Stack Development',47000,'Ahmedabad','2025-03-02'),
+(82,'Anita Sharma',20,'Female','Digital Marketing',32000,'Jaipur','2025-01-19'),
+(83,'Suraj Singh',24,'Male','Graphics Design',30000,'Varanasi','2025-02-07'),
+(84,'Poonam Yadav',19,'Female','RKCL',14500,'Alwar','2025-03-06'),
+(85,'Tarun Mehta',23,'Male','Full Stack Development',48500,'Ujjain','2025-01-24'),
+(86,'Kiran Arora',22,'Female','Digital Marketing',33500,'Delhi','2025-02-18'),
+(87,'Vivek Kumar',21,'Male','Graphics Design',27000,'Patiala','2025-03-01'),
+(88,'Ritu Patel',20,'Female','RKCL',15000,'Surat','2025-01-21'),
+(89,'Sahil Gupta',24,'Male','Full Stack Development',50000,'Jaipur','2025-02-26'),
+(90,'Neha Jain',23,'Female','Digital Marketing',34500,'Ajmer','2025-03-04'),
+(91,'Ashok Verma',22,'Male','Graphics Design',28500,'Kota','2025-01-17'),
+(92,'Kusum Devi',19,'Female','RKCL',14000,'Jaipur','2025-02-12'),
+(93,'Anurag Mishra',24,'Male','Full Stack Development',49500,'Gonda','2025-03-03'),
+(94,'Ishita Sharma',21,'Female','Digital Marketing',33000,'Delhi','2025-01-29'),
+(95,'Deependra Singh',23,'Male','Graphics Design',29500,'Bharatpur','2025-02-05'),
+(96,'Rekha Yadav',20,'Female','RKCL',15000,'Jaipur','2025-03-07'),
+(97,'Rohan Mehta',22,'Male','Full Stack Development',47000,'Mumbai','2025-01-25'),
+(98,'Pooja Verma',23,'Female','Digital Marketing',34000,'Lucknow','2025-02-16'),
+(99,'Kapil Sharma',24,'Male','Graphics Design',30000,'Chandigarh','2025-03-01'),
+(100,'Nandini Gupta',21,'Female','RKCL',15500,'Jaipur','2025-01-14');
+
+
+--- Basic SELECT
+--- 1. Display all student records from the Students table.
+	   Select * from Students;
+       
+--- 2. Show only name and course of all students.
+       Select name, course from Students;
+       
+--- 3. List all students enrolled in Full Stack Development.
+	   Select * from Students
+       Where course = "Full Stack Development";
+       
+--- 4. Find students who belong to Digital Marketing course
+	   Select * from Students
+       Where course = "Digital Marketing";
+       
+       
+--- WHERE Clause
+--- 5. Display students whose fees are greater than 30,000.
+       Select * from Students
+	   Where fees > 30000;
+       
+--- 6. Show students who are older than 20 years.
+       Select * from Students
+       Where age > 20;
+       
+--- 7. Find students from the city Jaipur.
+       Select * from Students
+       Where city = "Jaipur";
+       
+--- 8. List students enrolled in Graphics Design and from Delhi.       
+       Select * from Students
+       Where course = "Graphics Design" and city = "Delhi";
+
+
+--- ORDER BY
+--- 9. Display all students ordered by fees (highest to lowest).
+	   Select * From Students
+       order by fees Desc;
+       
+--- 10. Show student names ordered alphabetically
+		Select name from Students
+        order by name;
+       
+       
+--- COUNT, SUM, AVG
+--- 11. Count total number of students in the institute.
+	    Select count(*) From Students;
+        
+--- 12. Count how many students are enrolled in RKCL.
+		Select count(*) From Students
+        where course = "RKCL";
+        
+--- 13. Find the average fees of all students.
+        Select avg(fees) from Students;
+        
+--- 14. Calculate the total fees collected from Full Stack students   
+	    Select sum(fees) from Students
+        where course = "Full Stack Development";  
+        
+        
+--- GROUP BY
+--- 15. Show total number of students course-wise.
+        Select count(name),course from students
+        Group by course;
+        
+--- 16. Display average fees for each course.
+        Select avg(fees),course from students
+        Group by course;   
+     
+     
+--- Logical Conditions
+--- 17. Find students whose fees are between 20,000 and 40,000.
+        Select * from Students
+        Where fees between 20000 and 40000;
+        
+--- 18. Display students who are not from Jaipur.
+        Select * from Students
+        Where not city = "Jaipur";        
+      
+      
+--- Date & Practical Use
+--- 19. Show students who enrolled after 1st January 2025.
+        Select * from students 
+        where enrollment_date > 2025-01-01;
+        
+--- 20. Display the top 5 students with highest fees paid.    
+		Select * from students
+        Order by fees Desc
+        limit 5
+        
